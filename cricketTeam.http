@@ -1,0 +1,40 @@
+
+
+// GET All players API from cricket_team table 
+
+GET http://localhost:3000/players/
+
+###
+// POST a player API into cricket_team table 
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+
+### 
+// GET a player API from cricket_team table based on player_id  
+
+GET http://localhost:3000/players/2/ 
+
+### 
+// PUT(update) a player API4 into cricket_team table 
+
+PUT http://localhost:3000/players/1/ 
+Content-Type: application/json
+
+
+{
+  "playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
+}
+
+### 
+// DELETE a player API5 from cricket_team table 
+
+DELETE http://localhost:3000/players/1/ 
